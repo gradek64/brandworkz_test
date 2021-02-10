@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@render Component has loaded data 1`] = `
+<DocumentFragment>
+  <div
+    class="multipleLocations"
+  >
+    <form
+      class="searchTemperature"
+    >
+      <label
+        for="search"
+      />
+      search Temperature
+      <input
+        name="search"
+        type="number"
+      />
+      <div
+        class="minMaxContainer"
+      >
+        <label
+          for="max"
+        >
+          min
+          <input
+            checked=""
+            name="max"
+            type="radio"
+            value="min"
+          />
+        </label>
+        <label
+          for="min"
+        >
+          max
+          <input
+            name="min"
+            type="radio"
+            value="max"
+          />
+        </label>
+      </div>
+      <button
+        id="submit"
+      >
+        Search
+      </button>
+    </form>
+    loading
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,33 @@
+.multipleLocations h2 {
+  text-align: left;
+  background-color: #42515c;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+}
+
+.unitsContainer {
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px double #42515c;
+  box-shadow: palegreen;
+}
+
+.singleUnit {
+  min-width: 210px;
+  margin: 1em;
+}
+
+@media only screen and (max-width: 800px) {
+  .unitsContainer {
+    flex-direction: row;
+  }
+  .multipleLocations {
+    margin: 0;
+    padding: 5px;
+  }
+  .singleUnit {
+    min-width: 150px;
+  }
+}
