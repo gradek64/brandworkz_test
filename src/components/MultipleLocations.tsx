@@ -28,12 +28,9 @@ const MultipleLocations = () => {
 
   const filterTemperature = (filterData: [string, number]) => {
     const [minMax, temperature] = filterData
-    console.log('mi.......n')
-    console.log('minMax, temperature', minMax, temperature)
     let filter: WeatherResponse[]
     switch (minMax) {
       case 'min':
-        console.log('min')
         filter = data!.map<WeatherResponse>(({ city_name, data }): any => {
           return {
             city_name,
@@ -43,14 +40,11 @@ const MultipleLocations = () => {
         setData(filter)
         break;
       case 'max':
-        console.log('max')
         filter = data!.map<WeatherResponse>(({ city_name, data }): any => {
           return {
             city_name,
-            data: data!.filter(({ temp }: { temp: number }) => {
-              console.log(temp, temp <= temperature)
-              return temp <= temperature
-            }),
+            data: data!.filter(({ temp }: { temp: number }) => temp <= temperature
+            ),
           }
         })
         setData(filter)
