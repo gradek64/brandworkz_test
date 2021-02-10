@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders App component 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <p
+      class="Buttons"
+    >
+      <button>
+        Current Weather
+      </button>
+      /
+      <button>
+        16-day Weather
+      </button>
+    </p>
+    <div
+      class="singleLocation"
+    >
+      loading
+    </div>
+  </div>
+</DocumentFragment>
+`;

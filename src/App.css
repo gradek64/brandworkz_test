@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+  margin: 0 auto;
+  width: 70%;
+}
+
+[data-icon]:before {
+  font-family: icons;
+  content: attr(data-icon);
+}
+button:focus {
+  outline: 0;
+}
+
+.icon-alone {
+  display: inline-block;
+  font-size: 7em;
+}
+.App .Buttons button,
+.App p.Buttons {
+  border: none;
+  text-align: left;
+  color: #2196f3;
+  font-size: 20px;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 800px) {
+  html,
+  body {
+    overflow-x: hidden;
+    position: relative;
+  }
+  .App {
+    width: 95%;
+  }
+  .icon-alone {
+    display: inline-block;
+    font-size: 4em;
+  }
+}

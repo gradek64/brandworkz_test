@@ -1,0 +1,24 @@
+form.searchTemperature {
+  background-color: #42515c;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  color: white;
+}
+
+form.searchTemperature input {
+  padding: 0 10px;
+  margin: 0 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .searchTemperature {
+    margin: 0;
+    flex-direction: column;
+  }
+  .searchTemperature * {
+    margin: 5px;
+  }
+}
