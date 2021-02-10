@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 
 //custom 
 import './searchTemperature.css'
@@ -19,10 +19,9 @@ const SearchTemperature = ({ filterCallback }: IProps) => {
 
   const submitChange = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault()
-    const input = inputSearchRef.current
-    const valueToNumber = Number(input!.value)
+    const valueToNumber = Number(inputSearchRef.current!.value)
     //simple validation for non defined
-    if (!valueToNumber) return
+    if (!inputSearchRef!.current!.value || isNaN(valueToNumber)) return
     filterCallback([minOrMax, valueToNumber])
   }
 
